@@ -13,7 +13,7 @@
 
     <link rel="icon" type="image/x-icon" href="../Assests/logo.png">
 </head>
-
+ 
 <body>
     <!-- common nav bar -->
     <?php include 'navbarTenant.php';?>
