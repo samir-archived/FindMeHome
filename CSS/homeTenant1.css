@@ -1,0 +1,148 @@
+.tenantHomeContaineer{
+    max-width: 1020px;
+    width: 1020px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterClass {
+    width: 205px;
+    background-color: white;
+    padding: 10px;
+    height: 415px;
+    box-shadow: -2px 2px 2px 2px rgb(223, 223, 223);
+}
+
+.filterClass select {
+    width: 185px;
+    height: 28px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.filterClass input[type=text], .filterClass input[type=number]{
+    padding-left: 6px;
+}
+
+.filterTextBox{
+    width: 185px;
+    height: 28px;
+    font-size: 12px;
+    margin-top: 6px;
+    border-radius: 4px;
+}
+
+input[type=checkbox]{
+    height:12px;
+}
+
+#labelParameterId {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#filterButton {
+    width: 185px;
+    height: 32px;
+    margin-top: -20px;
+}
+
+.filterClass a{
+    font-size: 11px;
+}
+
+/* room detail section */
+.article{
+    width: 805px;
+}
+
+.article h2{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#roomContaineer{
+    width: 805px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    column-gap: 15px;
+}
+
+
+/* see more section*/
+#seeMoreDetailsId{
+    visibility: hidden;
+    /* visibility: visible; */
+}
+
+#seeMoreDarkBackground{
+    visibility: hidden;
+    /* visibility: visible; */
+}
+
+
+/* responsive section */
+@media screen and (max-width:1036px){
+    .tenantHomeContaineer{
+        width: 820px;
+    }
+    .article{
+        width: 600px;
+    }
+    #roomContaineer{
+        width:600px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:842px){
+    .tenantHomeContaineer{
+        width: 615px;
+    }
+    .article{
+        width: 400px;
+    }
+    #roomContaineer{
+        width:400px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:636px){
+    .tenantHomeContaineer{
+        display: grid;
+        row-gap: 15px;
+        width: 500px;
+        grid-template-columns:  1fr;
+    }
+
+    .tenantHomeContaineer{
+        width: 415px;
+    }
+}
+
+
+@media screen and (max-width:437px){
+    .tenantHomeContaineer{
+        width: 100%;
+    }
+
+    .filterClass{
+        margin: 0 auto;
+    }
+
+    .article{
+        margin: 0 auto;
+        width: 195px;
+    }
+
+    #roomContaineer{
+        /* width:400px; */
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,18 @@
+/* page number [problem in padding top] */
+#pageChanger{
+    margin-left: -10px;
+}
+
+/* see more rroom details */
+#seeMoreDarkBackgroundId,
+#seeMoreLandlordContaineerId,
+#updateRoomContaineerId {
+    visibility: hidden;
+}
+
+@media screen and (max-width:436px){
+    #pageChanger{
+        width: 90%;
+        margin-left: 10px;
+    }
+}

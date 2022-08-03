@@ -1,0 +1,149 @@
+#articleHomeLandlord {
+    max-width: 1170px;
+    width: 1020px;
+    margin: 65px auto;
+}
+
+#roomContaineer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    column-gap: 15px;
+}
+
+/* all p element of room containeer */
+#roomContaineer p{
+    line-height: 18px;
+    font-size: 12px;
+}
+
+
+/* individual box */
+.roomBox{
+    width: 190px;
+    height: 325px;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.4s;
+    box-shadow: -2px 2px 2px 2px rgb(223, 223, 223);
+}
+
+.roomBox:hover{
+    transition: 0.4s;
+    box-shadow: -2px 2px 20px 2px #d3cfcf;
+    transform: scale3d(1.04, 1.04, 1.04);
+    z-index: 8;
+}
+
+.roomImage{
+    height: 190px;
+    width: 190px;
+    background-color: whitesmoke;
+}
+
+.roomImage img{
+    width: 190px;
+    height: 190px;
+}
+
+/* room description area */
+.roomInfo{
+    width: 190px;
+    padding: 5px;
+}
+
+.roomDetailAtom{
+    display: flex;
+}
+
+.roomTitle{
+    width: 53px;
+}
+
+.roomDescription{
+    width: 135px;
+}
+
+/* button section */
+.roomButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.roomButton input[type=submit]{
+    width: 87px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* add to wishlist */
+#removeRoomBox{
+    position: relative;
+    top: -328px;
+    right: -165px;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+#removeRoomIcon{
+    width: 24px;
+    height: 24px;
+}
+
+
+/* responsive section */
+@media screen and (max-width:1039px){
+    #articleHomeLandlord{
+        width: 805px;
+    }
+
+    #roomContaineer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+/* compatible for tablet */
+@media screen and (max-width:830px){
+     #articleHomeLandlord{
+        width: 600px;
+    }
+    
+    #roomContaineer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:623px){
+    #articleHomeLandlord{
+        width: 405px;
+    }
+    
+    #roomContaineer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width:436px){
+    #articleHomeLandlord{
+        width: 100%;
+    }
+    
+    #roomContaineer{
+        grid-template-columns: 1fr;
+    }
+
+    #articleHomeLandlord h3{
+        margin-left: 10px;
+    }
+
+    .roomBox{
+        margin:0px auto;
+    }
+}

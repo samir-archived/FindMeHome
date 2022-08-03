@@ -1,0 +1,103 @@
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 2px 2px rgb(177, 176, 176);
+}
+
+.navContaineer {
+    display: grid;
+    max-width: 1368px;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 2fr 3fr 1fr;
+}
+
+/* logo section */
+.navLogo a {
+    font-size: 18px;
+    color: black;
+}
+
+.navLogo h3 {
+    font-family: 'Script mt';
+    line-height: 50px;
+}
+
+
+/* link section */
+.navLink {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.navLink ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navLink ul a{
+    width: 33%;
+    text-align: center;
+}
+
+.navLink ul a:hover {
+    background-color: yellowgreen;
+}
+
+.navLink ul a {
+    color: black;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+
+/* profile section */
+.navProfile{
+    cursor: pointer;
+}
+
+#navMenuId {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-top: 15px;
+}
+
+#navUserId {
+    float: right;
+    height: 35px;
+    width: 35px;
+    margin-top: 7.5px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+
+#navMenuId {
+    visibility: hidden;
+}
+
+/* responsive section */
+@media screen and (max-width: 790px) {
+    .navLink {
+        width: 90%;
+    }
+}
+
+/* tablet */
+@media screen and (max-width:769px) {
+    .navLink {
+        display: none;
+    }
+
+    #navMenuId {
+        visibility: visible;
+    }
+
+    #navUserId {
+        display: none;
+    }
+}

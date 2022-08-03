@@ -1,0 +1,163 @@
+/* map section : main containeer */
+.mapContaineerClass {
+    width: 1015px;
+    max-width: 1015px;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto;
+    margin-bottom: 10px;
+}
+
+/* google map section */
+.mapAreaClass {
+    width: 80%;
+    background-color: wheat;
+}
+
+.mapAreaClass img {
+    width: 100%;
+    height: 100%;
+}
+
+/* map filter section */
+.mapFilterClass {
+    width: 20%;
+    min-width: 210px;
+    background-color: white;
+    padding: 10px;
+}
+
+.mapFilterClass img{
+    width: 100%;
+    margin: 10px 0px 5px;
+}
+
+.mapFilterClass a{
+    font-size: 11px;
+}
+
+.mapFilterClass input {
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#rangeBoxId{
+    padding-left: 6px;
+    border-radius: 4px;
+    border: 2px solid gray;
+}
+
+.mapFilterClass input[type=submit] {
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.article{
+    max-width: 1015px;
+    margin: 0 auto;
+}
+
+/* room containeer */
+#roomContaineer{
+    width: 805px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    column-gap: 15px;
+}
+
+#pageChanger{
+    margin-left: -5px;
+}
+
+
+/* initial case for hiding unwated */
+.seeMoreDarkBackground, 
+.seeMoreDetailsClass{
+    display: none;
+}
+
+/* responsive section */
+@media screen and (max-width:1036px){
+    .mapContaineerClass{
+        width: 800px;
+    }
+
+    .article{
+        width: 805px;
+    }
+
+    #roomContaineer{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width:824px){
+    .mapContaineerClass{
+        width: 600px;
+    }
+
+    .article{
+        width: 600px;
+    }
+
+    #roomContaineer{
+        width: 600px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:634px){
+    .mapContaineerClass{
+        display: flex;
+        flex-direction: column;
+        height: 505px;
+        width: 100%;
+        margin-top: 52px;
+    }
+
+    .mapAreaClass{
+        width: 100%;
+        height: 300px;
+    }
+
+    .mapFilterClass{
+        width: 100%;
+        border-top: 2px solid gray;
+    }
+
+    .mapFilterClass input[type=submit],
+    .mapFilterClass input[type=number]{
+        width: 200px;
+        display: block;
+    }
+
+    .mapFilterClass img{
+        width: 100px;
+    }
+
+    .article{
+        width: 400px;
+    }
+
+    #roomContaineer{
+        width: 400px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:422px){
+    .article{
+        width: 190px;
+    }
+
+    #roomContaineer{
+        width: 190px;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,118 @@
+.updateRoomContaineer {
+    position: absolute;
+    top: 25px;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    z-index: 103;
+    height: 632px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+/* left containeer */
+.updateLeftSection{
+    width: 450px;
+    height: 632px;
+    background-color: whitesmoke;
+}
+
+
+/* image content containeer */
+.updateLeftSectionImage{
+    height: 632px;
+}
+
+.updateImage{
+    height: 600px;
+    width: 450px;
+    overflow: hidden;
+}
+
+.newRoomPicture{
+    padding-top: 3px;
+    padding-left: 10px;
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+}
+
+
+/* google map section */
+.updateLocation{
+    position: relative;
+    top: -632px;
+    width: 450px;
+    height: 632px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.updateLocation img{
+    width: 450px;
+    height: 632px;
+}
+
+
+
+
+/* right containeer */
+.updateRightSection{
+    padding: 10px;
+    width: 350px;
+    height: 632px;
+}
+
+/* message area */
+.updateRightSection h3{
+    text-align: center;
+}
+
+.updateRightSection p{
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+
+/* update room form */
+#updateRoomForm{
+    margin-top: 5px;
+}
+
+/* button section */
+.updateButtonSection{
+    margin-top: 10px;
+}
+
+
+/* close button */
+#closeEditRoomButton{
+    position: absolute;
+    top: -12px;
+    right: 4px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* inputs */
+.updateRoomContaineer input[type=number],
+.updateRoomContaineer input[type=text],
+.updateRoomContaineer select,
+.updateRoomContaineer textarea{
+    width: 100%;
+    height: 32px;
+    margin-bottom: 6px; 
+}
+
+/* buttons */
+.updateButtonSection input[type=submit]{
+    width: 162px;
+    height:34px;
+}
+
+.updateButtonSection{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
