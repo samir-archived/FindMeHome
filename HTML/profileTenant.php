@@ -22,7 +22,7 @@
     <div class="containeer">
         <div class="userDetailImageClass">
             <img src="../Assests/salad.png" alt="" id="userImageId">
-            <a href="" style="display: block; margin-left:10px">Change Profile Picture</a>
+            <a href="" style="display: block; margin-left:10px"> Change Profile Picture</a>
         </div>
         <hr>
         
